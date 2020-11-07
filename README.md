@@ -35,53 +35,57 @@
 ## On English
 Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
 ### For line breaks insert this below the current message ('SomeString' -> text on the new line).
+```
 #1-TO_NEW_STRING
-\[0]
+[0]
 #1-STR_UNCRYPT
-\['SomeString']
+['SomeString']
+```
 ### For message breaks insert this below the current message ('SomeString' -> text on the new message).
-'''
+```
 #1-32
-\[0, 3]
+[0, 3]
 #1-32
-\[0, 22]
+[0, 22]
 #1-NVL?
-\[]
+[]
 #1-32
-\[0, 0]
+[0, 0]
 #1-32
-\[0, 3]
+[0, 3]
 #1-17
-\[]
+[]
 #1-MESSAGE
-\[0]
+[0]
 #1-STR_UNCRYPT
-\['SomeString']
-'''
+['SomeString']
+```
 
 ## На русском
 Иногда можно столкнуться с одной большой-пребольшой проблемой: текст может не полностью влезать в текстовое окно. Однако, с сим средством вам не нужно обрезать его, отнюдь. Вы можеет организовывать переносы по строкам и сообщениям. Методы указаны ниже.
 ### Для переносов по строкам добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
+```
 #1-TO_NEW_STRING
-\[0]
+[0]
 #1-STR_UNCRYPT
-\['SomeString']
+['SomeString']
+```
 ### Для переносов по сообщениям добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
-'''
+```
 #1-32
-\[0, 3]
+[0, 3]
 #1-32
-\[0, 22]
+[0, 22]
 #1-NVL?
-\[]
+[]
 #1-32
-\[0, 0]
+[0, 0]
 #1-32
-\[0, 3]
+[0, 3]
 #1-17
-\[]
+[]
 #1-MESSAGE
-\[0]
+[0]
 #1-STR_UNCRYPT
-\['SomeString']
-'''
+['SomeString']
+```
