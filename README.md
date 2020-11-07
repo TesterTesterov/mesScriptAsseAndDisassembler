@@ -73,7 +73,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-TO_NEW_STRING
 [0]
 #1-STR_UNCRYPT
-['SomeString']
+['Какая_то_строка']
 ```
 ### Для переносов по сообщениям добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
 ```
@@ -92,5 +92,5 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-MESSAGE
 [0]
 #1-STR_UNCRYPT
-['SomeString']
+['Какая_то_строка']
 ```
