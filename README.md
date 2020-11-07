@@ -40,6 +40,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-STR_UNCRYPT
 \['SomeString']
 ### For message breaks insert this below the current message ('SomeString' -> text on the new message).
+'''
 #1-32
 \[0, 3]
 #1-32
@@ -56,6 +57,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 \[0]
 #1-STR_UNCRYPT
 \['SomeString']
+'''
 
 ## На русском
 Иногда можно столкнуться с одной большой-пребольшой проблемой: текст может не полностью влезать в текстовое окно. Однако, с сим средством вам не нужно обрезать его, отнюдь. Вы можеет организовывать переносы по строкам и сообщениям. Методы указаны ниже.
@@ -65,8 +67,9 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-STR_UNCRYPT
 \['SomeString']
 ### Для переносов по сообщениям добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
-#1-32\n
-\[0, 3]\n
+'''
+#1-32
+\[0, 3]
 #1-32
 \[0, 22]
 #1-NVL?
@@ -81,3 +84,4 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 \[0]
 #1-STR_UNCRYPT
 \['SomeString']
+'''
