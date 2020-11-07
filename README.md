@@ -65,8 +65,8 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-STR_UNCRYPT
 \['SomeString']
 ### Для переносов по сообщениям добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
-#1-32
-\[0, 3]
+#1-32\n
+\[0, 3]\n
 #1-32
 \[0, 22]
 #1-NVL?
