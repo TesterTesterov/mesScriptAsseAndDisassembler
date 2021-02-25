@@ -1,6 +1,7 @@
 # mesScriptAsseAndDissasembler
 ## On English
  Dual languaged (rus+eng) tool for disassembling and assembling scripts .mes from the visual novel's engine Silky Engine (also known as Silky's Engine or SilkyEngine). With it thou can fully edit code, not just strings, as with some earlier tools. Thou can add line or even message breaks without restrictions!
+ Sometimes mes scripts may not contain strings. If this is the case, they can be found in MAP string patch files in data.arc. For them use [MAPTool](https://github.com/TesterTesterov/MAPTool).
  
  It has some useful features.
  Firstly, during disassembling all opcodes '\x0A' changes to '\x0B', so the engine wouldn't try to decrypt new strings and break latin and half-width kana symbols.
@@ -12,6 +13,7 @@
  
 ## На русском
  Двуязычное (рус+англ) средство для разборки и сборки скриптов .mes движка визуальных новелл Silky Engine, также известного как Silky's Engine и SilkyEngine. С ним вы можете полностью редактирвоать код, а не только строки, как с ранее существовшими средствами. Вы можете добавлять разрывы текста по строкам и даже сообщениям без ограничений!
+ Ежель не найти в скриптах mes строк, то оные в файлах патча строк MAP могут быть, что в data.arc лежат. Для оных используйте [MAPTool](https://github.com/TesterTesterov/MAPTool).
  
  В нём есть несколько полезных особенностей.
  Во-первых, во время дизассемблирования все опкоды '\x0A' меняются на '\x0B', дабы движок не пытался дешифровать новые строки и не ломал при том латиницу и полуширинные символы.
