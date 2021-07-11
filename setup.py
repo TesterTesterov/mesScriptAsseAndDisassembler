@@ -13,6 +13,6 @@ executables = [cx_Freeze.Executable("main.py")]
 
 cx_Freeze.setup(
         name = "Name",
-        options = {"build_exe":{"packages":["os", "lzss", "struct"]}},
+        options = {"build_exe":{"packages":["os", "struct"]}},
         version="1",
         executables=executables) 
