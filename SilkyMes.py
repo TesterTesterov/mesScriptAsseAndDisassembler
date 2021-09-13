@@ -5,8 +5,10 @@ class SilkyMes:
     #[Opcode, struct, name, isInSea], modifier].
     CommandLibrary = [
         [0x00, '', 'NULL', []],
+        [0x02, '', '', []],
         [0x0A, 'S', 'STR_CRYPT', ['']],
         [0x0B, 'S', 'STR_UNCRYPT', ['']],
+        [0x10, 'B', '', ['']],
         [0x14, 'I', 'JUMP', ['>']],
         [0x15, 'I', 'MSG_OFSETTER',['>']],
         [0x18, '', 'NVL?', []],
@@ -159,6 +161,7 @@ class SilkyMes:
                 for i in range(len(self.CommandLibrary[comIndex][1])):
                     currentPart = self.CommandLibrary[comIndex][1][i]
                     if ((currentPart == 'I') or (currentPart == 'i')):
+                        znach = int(commands[i]) #!!!
                         if (self.CommandLibrary[comIndex][0] == 0x19):
                             znach = messageCount
                             messageCount += 1
