@@ -56,7 +56,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 [0, 3]
 #1-32
 [0, 22]
-#1-NVL?
+#1-24
 []
 #1-32
 [0, 0]
@@ -85,7 +85,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 [0, 3]
 #1-32
 [0, 22]
-#1-NVL?
+#1-24
 []
 #1-32
 [0, 0]
