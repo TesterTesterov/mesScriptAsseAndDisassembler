@@ -7,7 +7,7 @@
  It has some useful features.
  Firstly, during disassembling all opcodes '\x0A' changes to '\x0B', so the engine wouldn't try to decrypt new strings and break latin and half-width kana symbols.
  Secondly, thou can make comments in txt file with "$" at the beginning of the string.
- Thirdly, some definations: "#0-" are "free bytes", "#1-" are commands (and "\[...]" are arguments below) and "#2-" are labels.
+ Thirdly, some definations: "#0-" are "free bytes", "#1-" are commands (and "\[...]" are arguments below), "#2-" are labels and "#3" are speacial header labels.
  
  ### Tested on
  - [Hikari no Umi no Apeiria](https://vndb.org/v20860)
@@ -20,7 +20,7 @@
  В нём есть несколько полезных особенностей.
  Во-первых, во время дизассемблирования все опкоды '\x0A' меняются на '\x0B', дабы движок не пытался дешифровать новые строки и не ломал при том латиницу и полуширинные символы.
  Во-вторых, можно делать комментарии, при этом в начало строки необходимо ставить "$".
- В-третьих, опишем некоторые определения: "#0-" есть "вольные байты", "#1-" есть команды (и под ними "\[...]" аргументы) и "#2-" есть метки.
+ В-третьих, опишем некоторые определения: "#0-" есть "вольные байты", "#1-" есть команды (и под ними "\[...]" аргументы), "#2-" есть метки и "#3" есть специальные заголовочные метки.
  
  ### Протестировано на
  - [Апейрия живописных морей](https://vndb.org/v20860)
