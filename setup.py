@@ -1,18 +1,21 @@
-import cx_Freeze
 import sys
-import os
-import struct
+import cx_Freeze
 
-base = None 
+base = None
 
-if sys.platform=='win32':
+if (sys.platform == 'win32'):
     base = "Win32GUI"
 
 
-executables = [cx_Freeze.Executable("main.py")]    
+executables = [cx_Freeze.Executable("main.py",
+                                    shortcut_name="mesScriptAsseAndDisassembler",
+                                    shortcut_dir="mesScriptAsseAndDisassembler")]
 
 cx_Freeze.setup(
-        name = "Name",
-        options = {"build_exe":{"packages":["os", "struct"]}},
-        version="1",
-        executables=executables) 
+        name="mesScriptAsseAndDisassembler",
+        version="1.2",
+        description="Dual languaged (rus+eng) tool for packing and unpacking mes scripts of Silky Engine.\n"
+                    "Двухязычное средство (рус+англ) для распаковки и запаковки скриптов mes Silky Engine.",
+        options={"build_exe": {"packages": []}},
+        executables=executables
+)
