@@ -1,6 +1,7 @@
 # mesScriptAsseAndDissasembler
 ## On English
  Dual languaged (rus+eng) tool for disassembling and assembling scripts .mes from the visual novel's engine Silky Engine (also known as Silky's Engine or SilkyEngine). With it thou can fully edit code, not just strings, as with some earlier tools. Thou can add line or even message breaks without restrictions!
+ Mes script files can be used not just in Silky Engine, but also in AI6WIN. For assembling and disassembling mes script files of AI6WIN use [AI6WINScriptTool](https://github.com/TesterTesterov/AI6WINScriptTool).
  Sometimes mes scripts may not contain strings. If this is the case, they can be found in MAP string patch files in data.arc. For them use [MAPTool](https://github.com/TesterTesterov/MAPTool).
  Sometimes you may need to work with Silky Engine .arc scripts. For it use [SilkyArcTool](https://github.com/TesterTesterov/SilkyArcTool) instead.
  
@@ -15,6 +16,7 @@
  
 ## На русском
  Двуязычное (рус+англ) средство для разборки и сборки скриптов .mes движка визуальных новелл Silky Engine, также известного как Silky's Engine и SilkyEngine. С ним вы можете полностью редактирвоать код, а не только строки, как с ранее существовшими средствами. Вы можете добавлять разрывы текста по строкам и даже сообщениям без ограничений!
+ Скрипты с расширением "mes" используются не только в Silky Engine, но также и в AI6WIN. Чтобы дизассемблировать и ассемблировать скрипты движка AI6WIN используйте иное средство -- [AI6WINScriptTool](https://github.com/TesterTesterov/AI6WINScriptTool).
  Ежель не найти в скриптах mes строк, то оные в файлах патча строк MAP могут быть, что в data.arc лежат. Для оных используйте [MAPTool](https://github.com/TesterTesterov/MAPTool).
  Вам также может понадобиться необходимость работать с архивами .arc Silky Engine. Для этого используйте [SilkyArcTool](https://github.com/TesterTesterov/SilkyArcTool).
  
@@ -54,7 +56,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-TO_NEW_STRING
 [0]
 #1-STR_UNCRYPT
-['SomeString']
+["SomeString"]
 ```
 ### For message breaks insert this below the current message ('SomeString' -> text on the new message).
 ```
@@ -73,7 +75,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-MESSAGE
 [0]
 #1-STR_UNCRYPT
-['SomeString']
+["SomeString"]
 ```
 
 ## На русском
@@ -83,7 +85,7 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-TO_NEW_STRING
 [0]
 #1-STR_UNCRYPT
-['Какая_то_строка']
+["Какая_то_строка"]
 ```
 ### Для переносов по сообщениям добавьте под текущее сообщение следующий код ('Какая_то_строка' -> текст на новой строке).
 ```
@@ -102,5 +104,5 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
 #1-MESSAGE
 [0]
 #1-STR_UNCRYPT
-['Какая_то_строка']
+["Какая_то_строка"]
 ```
