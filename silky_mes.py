@@ -42,12 +42,16 @@ class SilkyMesScript:
         (0x35, '', ''),
         (0x36, 'B', 'JUMP_2'),
         (0x37, '', ''),
+        (0x38, '', ''),
         (0x3A, '', ''),
         (0x3B, '', ''),
         (0x3C, '', ''),
         (0x3D, '', ''),
         (0x3E, '', ''),
+        (0x3F, '', ''),
 
+        (0x40, '', ''),
+        (0x41, '', ''),
         (0x42, '', ''),
         (0x43, '', ''),
 
@@ -67,7 +71,6 @@ class SilkyMesScript:
 
     def __init__(self, mes_name: str, txt_name: str, encoding: str = "", debug: bool = False, verbose: bool = False,
                  hackerman_mode: bool = False):
-        # TODO: RELEASE SECOND-PARAMETER OFFSET SYSTEM ASSEMBLING!
         """Prms:
 mes_name -- name (and path) of mes script.
 txt_name -- name (and path) of txt file.
