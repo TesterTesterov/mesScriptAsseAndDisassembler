@@ -455,11 +455,16 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
         else:  # Dir mode.
             files_to_manage = []
             os.makedirs(txt_file, exist_ok=True)
+            falkeze = len(mes_file.split(os.sep))
             for root, dirs, files in os.walk(mes_file):
                 for file_name in files:
                     new_file_array = []  # mes_file, txt_file
 
-                    basic_path = os.sep.join(os.path.join(root, file_name).split(os.sep)[1:])
+                    basic_path = os.sep.join(os.path.join(root, file_name).split(os.sep)[falkeze:])
+                    print(basic_path)
+                    print(mes_file)
+                    print(os.path.join(mes_file, basic_path))
+                    print(os.path.normpath(os.path.join(mes_file, basic_path)))
                     rel_mes_name = os.path.normpath(os.path.join(mes_file, basic_path))
                     rel_txt_name = os.path.normpath(os.path.join(txt_file, os.path.splitext(basic_path)[0] + ".txt"))
 
@@ -528,11 +533,12 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
         else:  # Dir mode.
             files_to_manage = []
             os.makedirs(txt_file, exist_ok=True)
+            falkeze = len(txt_file.split(os.sep))
             for root, dirs, files in os.walk(txt_file):
                 for file_name in files:
                     new_file_array = []  # mes_file, txt_file
 
-                    basic_path = os.sep.join(os.path.join(root, file_name).split(os.sep)[1:])
+                    basic_path = os.sep.join(os.path.join(root, file_name).split(os.sep)[falkeze:])
                     rel_mes_name = os.path.normpath(os.path.join(mes_file, os.path.splitext(basic_path)[0] + ".MES"))
                     rel_txt_name = os.path.normpath(os.path.join(txt_file, basic_path))
 
@@ -605,6 +611,8 @@ Sometimes there could be a very big problem: text may not fully get in textbox. 
             status = False
             showwarning(title=self._strings_lib[self._language][22],
                         message=self._strings_lib[self._language][24])
+        mes_file = os.path.abspath(mes_file)
+        txt_file = os.path.abspath(txt_file)
         return mes_file, txt_file, status
 
     # Language technical methods.

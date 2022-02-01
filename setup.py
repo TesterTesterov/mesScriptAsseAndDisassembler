@@ -13,7 +13,7 @@ executables = [cx_Freeze.Executable("main.py",
 
 cx_Freeze.setup(
         name="mesScriptAsseAndDisassembler",
-        version="1.2",
+        version="1.3",
         description="Dual languaged (rus+eng) tool for packing and unpacking mes scripts of Silky Engine.\n"
                     "Двухязычное средство (рус+англ) для распаковки и запаковки скриптов mes Silky Engine.",
         options={"build_exe": {"packages": []}},

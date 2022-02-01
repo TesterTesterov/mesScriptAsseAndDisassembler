@@ -9,7 +9,7 @@ class SilkyMesScript:
 
     # [Opcode, struct, name].
     command_library = (
-        (0x00, '', 'NULL'),
+        (0x00, '', 'RETURN'),
         (0x01, 'I', ''),  # Found only in LIBLARY.LIB
         (0x02, '', ''),
         (0x03, '', ''),  # Found only in LIBLARY.LIB
@@ -36,8 +36,8 @@ class SilkyMesScript:
         (0x1B, '>I', ''),
         (0x1C, 'B', 'TO_NEW_STRING'),
 
-        (0x32, '>hh', ''),
-        (0x33, 'S', 'STR_RAW'),
+        (0x32, 'i', 'PUSH'),
+        (0x33, 'S', 'PUSH_STR'),
         (0x34, '', ''),
         (0x35, '', ''),
         (0x36, 'B', 'JUMP_2'),
